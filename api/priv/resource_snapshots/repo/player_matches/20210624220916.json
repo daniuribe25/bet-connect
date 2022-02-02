@@ -1,0 +1,157 @@
+{
+  "attributes": [
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "user_id",
+      "primary_key?": false,
+      "references": {
+        "destination_field": "id",
+        "destination_field_default": null,
+        "destination_field_generated": null,
+        "multitenancy": {
+          "attribute": null,
+          "global": null,
+          "strategy": null
+        },
+        "name": "player_matches_user_id_fkey",
+        "on_delete": null,
+        "on_update": null,
+        "table": "users"
+      },
+      "type": "uuid"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": true,
+      "name": "id",
+      "primary_key?": true,
+      "references": null,
+      "type": "bigint"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "match_cod_id",
+      "primary_key?": false,
+      "references": null,
+      "type": "decimal"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "platform_username",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "platform",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "match_map",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "match_type",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "match_teamcomp",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "match_date",
+      "primary_key?": false,
+      "references": null,
+      "type": "utc_datetime"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "kills",
+      "primary_key?": false,
+      "references": null,
+      "type": "bigint"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "damage",
+      "primary_key?": false,
+      "references": null,
+      "type": "bigint"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "placement",
+      "primary_key?": false,
+      "references": null,
+      "type": "bigint"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "json_response",
+      "primary_key?": false,
+      "references": null,
+      "type": "map"
+    }
+  ],
+  "base_filter": null,
+  "check_constraints": [],
+  "has_create_action": true,
+  "hash": "2C24F2F07B1F68B2D67DD540E3F632EBCE7614817777B5EC64C67C135FE11745",
+  "identities": [
+    {
+      "base_filter": null,
+      "index_name": "player_matches_unique_player_match_index",
+      "keys": [
+        "match_cod_id",
+        "platform",
+        "platform_username"
+      ],
+      "name": "unique_player_match"
+    }
+  ],
+  "multitenancy": {
+    "attribute": null,
+    "global": null,
+    "strategy": null
+  },
+  "repo": "Elixir.PlConnect.Repo",
+  "table": "player_matches"
+}

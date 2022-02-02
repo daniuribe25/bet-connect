@@ -1,0 +1,154 @@
+{
+  "attributes": [
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "id",
+      "primary_key?": true,
+      "references": null,
+      "type": "uuid"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "bet_total_amount",
+      "primary_key?": false,
+      "references": null,
+      "type": "float"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "prev_wallet_balance",
+      "primary_key?": false,
+      "references": null,
+      "type": "float"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "post_wallet_balance",
+      "primary_key?": false,
+      "references": null,
+      "type": "float"
+    },
+    {
+      "allow_nil?": false,
+      "default": "false",
+      "generated?": false,
+      "name": "won",
+      "primary_key?": false,
+      "references": null,
+      "type": "boolean"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "type",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "status",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": true,
+      "default": "fragment(\"now()\")",
+      "generated?": false,
+      "name": "inserted_at",
+      "primary_key?": false,
+      "references": null,
+      "type": "utc_datetime_usec"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "bet_history_id",
+      "primary_key?": false,
+      "references": {
+        "destination_field": "id",
+        "destination_field_default": null,
+        "destination_field_generated": null,
+        "multitenancy": {
+          "attribute": null,
+          "global": null,
+          "strategy": null
+        },
+        "name": "wallet_transactions_bet_history_id_fkey",
+        "on_delete": null,
+        "on_update": null,
+        "table": "users_bet_history"
+      },
+      "type": "uuid"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "team_id",
+      "primary_key?": false,
+      "references": {
+        "destination_field": "id",
+        "destination_field_default": null,
+        "destination_field_generated": null,
+        "multitenancy": {
+          "attribute": null,
+          "global": null,
+          "strategy": null
+        },
+        "name": "wallet_transactions_team_id_fkey",
+        "on_delete": null,
+        "on_update": null,
+        "table": "teams"
+      },
+      "type": "uuid"
+    },
+    {
+      "allow_nil?": true,
+      "default": "nil",
+      "generated?": false,
+      "name": "user_id",
+      "primary_key?": false,
+      "references": {
+        "destination_field": "id",
+        "destination_field_default": null,
+        "destination_field_generated": null,
+        "multitenancy": {
+          "attribute": null,
+          "global": null,
+          "strategy": null
+        },
+        "name": "wallet_transactions_user_id_fkey",
+        "on_delete": null,
+        "on_update": null,
+        "table": "users"
+      },
+      "type": "uuid"
+    }
+  ],
+  "base_filter": null,
+  "check_constraints": [],
+  "has_create_action": true,
+  "hash": "51A03B0539D3815955F07CA5B088D31DE169BA5FEB53E6CC44F5C93772F47715",
+  "identities": [],
+  "multitenancy": {
+    "attribute": null,
+    "global": null,
+    "strategy": null
+  },
+  "repo": "Elixir.PlConnect.Repo",
+  "table": "wallet_transactions"
+}

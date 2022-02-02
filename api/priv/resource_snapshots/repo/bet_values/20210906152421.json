@@ -1,0 +1,115 @@
+{
+  "attributes": [
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "id",
+      "primary_key?": true,
+      "references": null,
+      "type": "uuid"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "game_mode",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "bet_category",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": false,
+      "default": "nil",
+      "generated?": false,
+      "name": "type",
+      "primary_key?": false,
+      "references": null,
+      "type": "text"
+    },
+    {
+      "allow_nil?": false,
+      "default": "1",
+      "generated?": false,
+      "name": "level",
+      "primary_key?": false,
+      "references": null,
+      "type": "bigint"
+    },
+    {
+      "allow_nil?": false,
+      "default": "1",
+      "generated?": false,
+      "name": "goal",
+      "primary_key?": false,
+      "references": null,
+      "type": "bigint"
+    },
+    {
+      "allow_nil?": false,
+      "default": "1.0",
+      "generated?": false,
+      "name": "payout",
+      "primary_key?": false,
+      "references": null,
+      "type": "float"
+    },
+    {
+      "allow_nil?": false,
+      "default": "1.0",
+      "generated?": false,
+      "name": "min_kda",
+      "primary_key?": false,
+      "references": null,
+      "type": "float"
+    },
+    {
+      "allow_nil?": false,
+      "default": "1.0",
+      "generated?": false,
+      "name": "max_kda",
+      "primary_key?": false,
+      "references": null,
+      "type": "float"
+    },
+    {
+      "allow_nil?": true,
+      "default": "fragment(\"now()\")",
+      "generated?": false,
+      "name": "inserted_at",
+      "primary_key?": false,
+      "references": null,
+      "type": "utc_datetime_usec"
+    },
+    {
+      "allow_nil?": true,
+      "default": "fragment(\"now()\")",
+      "generated?": false,
+      "name": "updated_at",
+      "primary_key?": false,
+      "references": null,
+      "type": "utc_datetime_usec"
+    }
+  ],
+  "base_filter": null,
+  "check_constraints": [],
+  "has_create_action": true,
+  "hash": "32787F366A5AE88C4844DFD836D0B2DD26971771FD504174DC930B783448E140",
+  "identities": [],
+  "multitenancy": {
+    "attribute": null,
+    "global": null,
+    "strategy": null
+  },
+  "repo": "Elixir.PlConnect.Repo",
+  "table": "bet_values"
+}

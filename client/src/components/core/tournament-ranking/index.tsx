@@ -1,0 +1,1 @@
+export * as TournamentRankingTable from './tournament-ranking-table'

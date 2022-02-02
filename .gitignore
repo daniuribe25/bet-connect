@@ -1,0 +1,8 @@
+/.idea
+pgdata
+.env
+api/exceute command.txt
+api/.env.staging
+yarn.lock
+node_modules
+.DS_Store

@@ -1,0 +1,44 @@
+body {
+  background-color: #031725 !important;
+}
+
+#root {
+  background: #031725;
+}
+
+.MuiCollapse-container {
+  max-width: calc(100% - 40px) !important;
+  width: 600px;
+}
+
+.MuiCollapse-container > div > div > div > div {
+  border-radius: 8px !important;
+}
+
+@media (max-width: 599.95px) {
+  .MuiCollapse-container {
+    margin: auto !important;
+  }
+}
+
+.react-tel-input .flag-dropdown {
+  top: 15px !important;
+  bottom: 15px !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  left: 10px;
+}
+
+.MuiDialog-paperScrollPaper {
+  max-height: 100vh !important;
+}
+
+.MuiDrawer-root {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.MuiBackdrop-root {
+  max-width: 600px;
+  margin: 0 auto;
+}
