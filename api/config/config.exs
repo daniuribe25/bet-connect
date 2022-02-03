@@ -112,8 +112,8 @@ config :phoenix, :json_library, Jason
 config :tesla, :adapter, {Tesla.Adapter.Finch, name: CodApi}
 
 config :ex_aws,
-  access_key_id: ["AKIA554XLT4AZQTBFUOT", :instance_role],
-  secret_access_key: ["AKIA554XLT4AZQTBFUOT", :instance_role]
+  access_key_id: ["", :instance_role],
+  secret_access_key: ["", :instance_role]
 
 
 config :pl_connect, PlConnect.Mailer,

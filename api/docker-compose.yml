@@ -26,13 +26,13 @@ services:
       BERBIX_TEMPLATE: tpk_rOxbVoRLxxFD6Mx0TnjCPY1T5fdBqNDu
       BERBIX_ORG_ID: 5663461317017600
       RETOOL_TOKEN: 1576fcd4328a4e5988b52257fec30b26511426ea35d4438ba03a93bad168b22d
-      PAYPAL_CLIENT: ARDptDlTcnSVtApgLJGG234PzaCzmM1Nic3nKLpt5H8e0MGax7niyOxtQuwGsnagWJTkB5mtiHzAN3Cs
-      PAYPAL_SECRET: ELNy667PV33lrVp4OQhS5t8k0qgiPjIK707sZK_CXn4kNFzec2Dt5JAZOlfPnFK19VO2Wbs71uFPohyO
+      PAYPAL_CLIENT:
+      PAYPAL_SECRET:
       PAYPAL_URL: https://api-m.sandbox.paypal.com
       TOURNAMENTS_URL: http://pl-dev-be-pl-tournaments-1366517835.us-east-1.elb.amazonaws.com
 #      TOURNAMENTS_TOKEN: 1576fcd4328a4e5PzaCzmM1Nic3nKLpt5H8e0MGax7niyOxtQukB5mtiHzAN3Csfba03a93bad168b22d
-      AWS_ACCESS_KEY_ID: AKIA554XLT4AZQTBFUOT
-      AWS_SECRET_ACCESS_KEY: 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
+      AWS_ACCESS_KEY_ID:
+      AWS_SECRET_ACCESS_KEY:
   database:
     image: postgres:13
     ports:
